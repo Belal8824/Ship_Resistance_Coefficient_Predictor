@@ -39,7 +39,7 @@ def predict_resistance_coefficient(model: XGBRegressor, feature_values: dict) ->
     Returns
     -------
     float
-        The predicted Resistance Coefficient.
+        The predicted Froude's Circular Constant.
     """
     ordered_row = {key: [feature_values[key]] for key in FEATURE_ORDER}
     input_frame = pd.DataFrame(ordered_row, columns=FEATURE_ORDER)
