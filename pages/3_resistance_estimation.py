@@ -4,7 +4,7 @@ pages/3_resistance_estimation.py
 Resistance Estimation page: the core functionality of the application.
 Collects the seven model inputs via number inputs (engineers typically
 know exact values rather than needing sliders), runs the trained model,
-and displays the predicted Resistance Coefficient.
+and displays the predicted Froude's Circular Constant.
 """
 
 import streamlit as st
@@ -13,7 +13,7 @@ from config import FEATURE_BY_KEY
 from model_utils import load_model, predict_resistance_coefficient
 from styles import inject_global_styles, hull_section_divider, sidebar_brand, render_footer
 
-st.set_page_config(page_title="Resistance Estimation | Ship Resistance Prediction", layout="wide")
+st.set_page_config(page_title="Froude's Circular Constant Estimation | Froude's Circular Constant Prediction", layout="wide")
 inject_global_styles()
 sidebar_brand()
 
@@ -21,7 +21,7 @@ st.markdown('<div class="eyebrow">Prediction</div>', unsafe_allow_html=True)
 st.title("Resistance Estimation")
 st.write(
     "Enter the seven hull-form parameters within their valid ranges to "
-    "estimate the Resistance Coefficient."
+    "estimate the Froude's Circular Constant."
 )
 
 st.markdown(hull_section_divider(), unsafe_allow_html=True)
