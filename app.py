@@ -81,7 +81,7 @@ def render_home() -> None:
 
 def main() -> None:
     st.set_page_config(
-        page_title="Ship Resistance Prediction | Series 60",
+        page_title="Froude's Circular Constant Prediction | Series 60",
         page_icon=None,
         layout="wide",
         initial_sidebar_state="expanded",
