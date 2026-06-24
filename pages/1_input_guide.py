@@ -12,7 +12,7 @@ import streamlit as st
 from config import FEATURES
 from styles import inject_global_styles, hull_section_divider, sidebar_brand, render_footer
 
-st.set_page_config(page_title="Input Guide | Ship Resistance Prediction", layout="wide")
+st.set_page_config(page_title="Input Guide | Froude's Circular Constant Prediction", layout="wide")
 inject_global_styles()
 sidebar_brand()
 
