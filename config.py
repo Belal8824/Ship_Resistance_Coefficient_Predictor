@@ -1,7 +1,7 @@
 """
 config.py
 
-Central configuration for the Froude's Circular Constant Prediction application.
+Central configuration for the Ship Resistance Prediction application.
 Holds model metadata, feature definitions, validity ranges, and dataset
 information in one place so every page stays consistent and the app
 remains easy to maintain.
@@ -20,7 +20,7 @@ MODEL_INFO = {
     "Algorithm": "XGBoost Regressor",
     "Training Samples": "484",
     "Input Features": "7",
-    "Output": "Froude's Circular Constant",
+    "Output": "Resistance Coefficient",
     "Validation Method": "Unseen Hull Forms Testing",
     "Test Hulls": "4211 and 4213",
     "R\u00b2 Score": "99.20%",
@@ -144,12 +144,12 @@ FEATURE_ORDER: list[str] = [f.key for f in FEATURES]
 # Application copy
 # ---------------------------------------------------------------------------
 
-APP_TITLE = "AI-Based Froude's Circular Constant Prediction for Series 60 Hull Forms"
+APP_TITLE = "AI-Based Ship Resistance Coefficient Prediction for Series 60 Hull Forms"
 APP_SUBTITLE = "Preliminary Design Stage"
 
 PROJECT_DESCRIPTION = (
     "This application uses an XGBoost machine learning model trained on "
-    "Series 60 resistance data to estimate the Froude's Circular Constant "
+    "Series 60 resistance data to estimate the resistance coefficient "
     "during the preliminary ship design stage."
 )
 
